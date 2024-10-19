@@ -1,0 +1,19 @@
+#service_container {
+  padding-top: 100px;
+  background-color: #f8f8f8;
+  text-align: center;
+  .title-container {
+    font-size: 44px;
+    font-family: Mona-Sans, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .sub-title-container {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    align-items: center;
+    padding-bottom: 80px;
+    color: #333b43;
+  }
+}

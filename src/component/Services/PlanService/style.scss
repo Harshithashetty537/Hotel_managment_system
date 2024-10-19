@@ -1,0 +1,128 @@
+#main_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* This ensures the content wraps on smaller screens */
+  padding-bottom: 218px;
+
+  /* Image Container */
+  .image-container {
+    width: 50%;
+    .service-page-image {
+      border-radius: 20px;
+      height: 650px !important;
+      width: 100%; /* Ensure image takes up full width */
+      object-fit: cover; /* Keeps the image aspect ratio */
+    }
+  }
+
+  /* Service Details */
+  .service-detail-container {
+    width: 50%;
+    padding-top: 40px;
+
+    .serviceSection {
+      padding-bottom: 55px;
+      display: flex;
+    }
+
+    .serviceIcon {
+      width: 84px;
+      height: 84px;
+      padding-left: 100px;
+    }
+
+    .serviceIcons {
+      padding-left: 20px;
+
+      .serviceIcon-title {
+        font-size: 25px;
+        letter-spacing: -0.5px;
+        font-family: "Mona Sans", sans-serif;
+        font-weight: bold;
+        text-align: left;
+        padding-bottom: 15px;
+        padding-left: 100px;
+      }
+
+      .serviceIcon-subTitle {
+        font-family: "Inter", sans-serif;
+        letter-spacing: -0.72px;
+        color: #333b43;
+        text-align: left;
+        font-size: 18px;
+        padding-left: 100px;
+      }
+    }
+  }
+
+  /* Responsive adjustments */
+  @media only screen and (max-width: 1024px) {
+    .image-container,
+    .service-detail-container {
+      width: 100%; /* Full width on tablets */
+      text-align: center; /* Center content */
+      padding: 0 20px; /* Add some padding */
+    }
+
+    .service-page-image {
+      height: auto; /* Adjust the image height to be flexible */
+    }
+
+    .serviceSection {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center the content */
+    }
+
+    .serviceIcon {
+      padding-left: 0; /* Remove padding for smaller screens */
+    }
+
+    .serviceIcons {
+      padding-left: 0; /* Center title and subtitle on smaller screens */
+      text-align: center;
+
+      .serviceIcon-title,
+      .serviceIcon-subTitle {
+        padding-left: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .serviceSection {
+      padding-bottom: 40px; /* Reduce space between sections */
+    }
+
+    .serviceIcon {
+      width: 70px;
+      height: 70px; /* Smaller icons on smaller screens */
+    }
+
+    .serviceIcon-title {
+      font-size: 22px; /* Adjust font size for smaller screens */
+    }
+
+    .serviceIcon-subTitle {
+      font-size: 16px; /* Adjust subtitle font size */
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .serviceSection {
+      padding-bottom: 30px;
+    }
+
+    .serviceIcon {
+      width: 60px;
+      height: 60px;
+    }
+
+    .serviceIcon-title {
+      font-size: 20px;
+    }
+
+    .serviceIcon-subTitle {
+      font-size: 14px;
+    }
+  }
+}

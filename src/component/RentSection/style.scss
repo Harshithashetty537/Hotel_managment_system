@@ -1,0 +1,160 @@
+#rent_container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 0px 100px 0px;
+  background-color: #f8f8f8;
+}
+
+#selection-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  height: 620px;
+
+  .content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .selected-item-wrapper {
+    cursor: pointer;
+    border-left: 4px solid;
+    padding-left: 22px;
+    border-color: transparent;
+  }
+
+  .image-container {
+    width: 40%;
+    height: 100%;
+
+    .laptopImage {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #selection-box-container {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+
+    .content {
+      width: 100%;
+      gap: 20px;
+    }
+
+    .image-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .laptopImage {
+      height: auto;
+    }
+  }
+
+  .selected-item-wrapper h2 {
+    font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  p {
+    font-size: 14px; /* Adjust text size */
+  }
+}
+
+@media (max-width: 768px) {
+  #selection-box-container {
+    flex-direction: column;
+    height: auto;
+
+    .content {
+      width: 100%;
+      gap: 15px;
+    }
+
+    .image-container {
+      width: 100%;
+    }
+
+    .laptopImage {
+      height: auto;
+    }
+  }
+
+  .selected-item-wrapper h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #selection-box-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+
+    .content {
+      width: 100%;
+      gap: 10px;
+    }
+
+    .image-container {
+      width: 100%;
+    }
+
+    .laptopImage {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .selected-item-wrapper h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+#rent_container h1 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 50px;
+  margin: 100px 0px 20px 0px;
+  font-family: Mona-Sans, sans-serif;
+}
+
+#topHead {
+  margin: auto;
+  text-align: center;
+  color: #7f8388;
+  padding-bottom: 88px;
+}
+h2 {
+  text-align: center;
+}
+p {
+  margin-top: 0px;
+  font-family: Mona-Sans, sans-serif;
+  font-size: 16px;
+  color: #7f8388;
+  text-align: center;
+}
+
+.selected-item-wrapper h2 {
+  font-weight: bolder;
+  margin-bottom: 5px;
+  color: #656565;
+  font-size: 32px;
+  font-family: Mona-Sans, sans-serif;
+}
